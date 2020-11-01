@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+  .promo {
+	max-width: 100%;
+	&__header {
+	  font-size: 30px;
+	}
+	&__subheader {
+	  font-size: 20px;
+	}
+	&__wrapper {
+	  padding: 0 50px;
+	}
+	.container {
+	  max-width: 760px;
+	  .header {
+		padding: 0 50px;
+	  }
+	}
+  }
+}

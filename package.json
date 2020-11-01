@@ -1,5 +1,5 @@
 {
-  "name": "uber",
+  "name": "pulsometer",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Idlemike/uber.git"
+    "url": "git+https://github.com/Idlemike/pulsometer.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Idlemike/uber/issues"
+    "url": "https://github.com/Idlemike/pulsometer/issues"
   },
-  "homepage": "https://github.com/Idlemike/uber#readme",
+  "homepage": "https://github.com/Idlemike/pulsometer#readme",
   "devDependencies": {
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
