@@ -1,6 +1,7 @@
 @import 'base/variables';
-
+@import "base/animations";
 @import "base/mixins";
+@import "base/media";
 *{
   font-family: 'Museo Sans Cyrl', sans-serif;
 }
@@ -19,8 +20,8 @@
 @import "blocks/carousel";
 @import "blocks/catalog";
 @import "blocks/feedback";
-@import "base/media";
 @import "blocks/footer";
 @import "blocks/modal";
 @import "blocks/pageup";
+
 

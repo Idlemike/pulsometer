@@ -1,3 +1,91 @@
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@media (max-width: 768px) {
+  .promo {
+    max-width: 100%;
+  }
+  .promo__header {
+    font-size: 30px;
+  }
+  .promo__subheader {
+    font-size: 20px;
+  }
+  .promo__wrapper {
+    padding: 0 50px;
+  }
+  .promo .container {
+    max-width: 760px;
+  }
+  .promo .container .header {
+    padding: 0 50px;
+  }
+
+  .catalog__content {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 575px) {
+  .feedback__photo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .feedback__item {
+    flex-direction: column;
+  }
+  .feedback__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+  .feedback__name {
+    text-align: center;
+  }
+  .feedback__achievement {
+    text-align: center;
+  }
+  .feedback__text {
+    text-align: center;
+  }
+
+  .advantages__wrapper {
+    flex-direction: column;
+  }
+  .advantages__item {
+    width: 95%;
+  }
+
+  .next {
+    display: none;
+  }
+
+  .prev {
+    display: none;
+  }
+
+  .consultation .title_left {
+    text-align: center;
+  }
+  .consultation__descr {
+    text-align: center;
+  }
+  .consultation form {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+}
 * {
   font-family: "Museo Sans Cyrl", sans-serif;
 }
@@ -184,6 +272,15 @@
   text-transform: uppercase;
   text-decoration: underline;
   font-weight: 400;
+}
+.advantages__icon_animated {
+  animation-name: heartbeat;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+.advantages__icon_animated:hover {
+  animation-play-state: paused;
 }
 
 .consultation {
@@ -510,83 +607,6 @@
   text-align: left;
 }
 
-@media (max-width: 768px) {
-  .promo {
-    max-width: 100%;
-  }
-  .promo__header {
-    font-size: 30px;
-  }
-  .promo__subheader {
-    font-size: 20px;
-  }
-  .promo__wrapper {
-    padding: 0 50px;
-  }
-  .promo .container {
-    max-width: 760px;
-  }
-  .promo .container .header {
-    padding: 0 50px;
-  }
-
-  .catalog__content {
-    justify-content: space-evenly;
-  }
-}
-@media (max-width: 575px) {
-  .feedback__photo {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .feedback__item {
-    flex-direction: column;
-  }
-  .feedback__wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
-  }
-  .feedback__name {
-    text-align: center;
-  }
-  .feedback__achievement {
-    text-align: center;
-  }
-  .feedback__text {
-    text-align: center;
-  }
-
-  .advantages__wrapper {
-    flex-direction: column;
-  }
-  .advantages__item {
-    width: 95%;
-  }
-
-  .next {
-    display: none;
-  }
-
-  .prev {
-    display: none;
-  }
-
-  .consultation .title_left {
-    text-align: center;
-  }
-  .consultation__descr {
-    text-align: center;
-  }
-  .consultation form {
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .header {
-    flex-direction: column;
-  }
-}
 .footer {
   height: 630px;
   position: relative;
