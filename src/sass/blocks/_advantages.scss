@@ -38,10 +38,7 @@
   }
   &__icon {
     &_animated {
-      animation-name: heartbeat;
-      animation-duration: 1.5s;
-      animation-timing-function: ease;
-      animation-iteration-count: infinite;
+      animation: heartbeat 1.5s ease infinite;
       &:hover {
         animation-play-state: paused;
       }
